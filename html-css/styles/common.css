@@ -1,7 +1,16 @@
+:root {
+    --bg-color: #000;
+    --main-brand-color: #e50914;
+    --main-brand-color-light: #e44c54;
+    --secondary-brand-color: #0e1b4f;
+    --main-text-color: #fff;
+    --border-color: #4b5563;
+}
+
 .main-bg {
-    background-color: black;
     background-color: rgb(0, 0, 0);
     background-color: #000;
+    background-color: var(--bg-color);
     color: #fff;
     opacity: 1;
     /* valores del 0 al 1 */
