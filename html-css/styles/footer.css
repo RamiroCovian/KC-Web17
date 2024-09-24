@@ -1,21 +1,32 @@
-.footer {
+/* .footer {
     background-color: blue;
-    /*Margen, espaciado entre el borde y resto de los elementos*/
+    Margen, espaciado entre el borde y resto de los elementos
     margin-top: 80px;
     margin-right: 40px;
     margin-left: 40px;
-    /*  T    R    B   L */
+      T    R    B   L 
     margin: 80px 40px 0 40px;
-    /*   Y    X */
+       Y    X 
     margin: 80px 40px;
-    /* Todos los lados */
+     Todos los lados 
     margin: 40px;
-    /*BORDER, espaciado entre el padding y el margen*/
+    BORDER, espaciado entre el padding y el margen
     border: 2px solid red;
     border-radius: 20px;
-    /*PADDING, espaciado entre el contenido y el borde*/
+    PADDING, espaciado entre el contenido y el borde
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+} */
+
+.footer {
+    text-align: center;
+    /* Le da peso o ancho a la tipografia */
+    font-weight: 100;
+    /* estilos de tipografia */
+    font-style: italic;
+    /* Transforma los textos */
+    text-transform: lowercase;
+    padding: 20px 0;
 }
