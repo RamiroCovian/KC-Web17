@@ -11,28 +11,6 @@
     box-sizing: border-box;
 }
 
-.footer {
-    background-color: blue;
-    /*Margen, espaciado entre el borde y resto de los elementos*/
-    margin-top: 80px;
-    margin-right: 40px;
-    margin-left: 40px;
-    /*  T    R    B   L */
-    margin: 80px 40px 0 40px;
-    /*   Y    X */
-    margin: 80px 40px;
-    /* Todos los lados */
-    margin: 40px;
-    /*BORDER, espaciado entre el padding y el margen*/
-    border: 2px solid red;
-    border-radius: 20px;
-    /*PADDING, espaciado entre el contenido y el borde*/
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .content {
     width: 50%;
 }
