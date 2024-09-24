@@ -21,6 +21,7 @@
 } */
 
 .footer {
+    /* NADA DE TEXTO: JUSTIFY */
     text-align: center;
     /* Le da peso o ancho a la tipografia */
     font-weight: 100;
@@ -28,5 +29,9 @@
     font-style: italic;
     /* Transforma los textos */
     text-transform: lowercase;
-    padding: 20px 0;
+    padding: 2em 0;
+    /* 1rem -> 16px es relativo al font-size del root*/
+    /* 1em ->  16px es relativo al ".main-bg" */
+    font-size: 1rem;
+    background-color: blue;
 }
