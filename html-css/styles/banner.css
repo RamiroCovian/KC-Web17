@@ -1,0 +1,29 @@
+.banner {
+    /* 75vh -> 75% del tamano de la pantalla */
+    height: 75vh;
+    /* Alinea el contenido */
+    align-content: center;
+    position: relative;
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .content {
+        text-align: center;
+        /* posicion del contenido */
+        z-index: 1;
+        position: relative;
+    }
+
+    .image {
+        background-image: url('../assets/app/catalog.jpg');
+        opacity: 0.3;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
