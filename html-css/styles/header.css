@@ -1,0 +1,41 @@
+.header {
+    /*  pega la posicion arriba */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--bg-color);
+
+    .image {
+        width: 20%;
+        /* limito el ancho */
+        min-width: 120px;
+        max-width: 250px;
+    }
+
+    .nav {
+        .list {
+            /*  quita los puntos */
+            list-style: none;
+            /* quitamos los estilos del ul */
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.btn {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    /* quita la linea del link */
+    text-decoration: none;
+    padding: 0.7rem;
+    /* quita el problema de que se encimen los botones */
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.hidden {
+    /* visibility: hidden;
+    opacity: 0; */
+    display: none;
+}

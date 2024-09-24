@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
+
 
 
     <style>
@@ -21,31 +23,52 @@
     Comentario 
     En multi linea
     -->
+    <header class="header">
+        <img class="image" src="/html-css/assets/app/codeflix.png" alt="Codeflix brand">
+        <nav class="nav">
+            <ul class="list">
+                <li class="item">
+                    <!-- <a href="styles/banner.css">All shows</a> -->
+                    <!-- poniendo las #shows te lleva al elemento con id=shows -->
+                    <a class="btn" href="#shows">All shows</a>
+
+                </li>
+                <li class="item">
+                    <a class="btn hidden" href="signin.html">Sign in</a>
+                    <!-- <a href="https://google.com" target="_blank" rel="noopener noreferrer">Sign in</a> -->
+                </li>
+        </nav>
+    </header>
     <h1>
         Codeflix movies
     </h1>
-    <section class="banner">
-        <div class="image"></div>
-        <div class="content">
-            <h2>Unlimited movies, TV shows, and more</h2>
-            <p class="bold">Watch anywhere. Cancel anytime</p>
-            <p>Ready to watch?</p>
-        </div>
-    </section>
-    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt suscipit reiciendis laboriosam
-        omnis itaque id iste repellat expedita, dolorum aliquid porro quam impedit aspernatur explicabo dolore vel
-        quisquam odio. Repudiandae.</p>
+    <main>
+        <section class="banner">
+            <div class="image"></div>
+            <div class="content">
+                <h2>Unlimited movies, TV shows, and more</h2>
+                <p class="bold">Watch anywhere. Cancel anytime</p>
+                <p>Ready to watch?</p>
+            </div>
+        </section>
+        <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt suscipit reiciendis
+            laboriosam
+            omnis itaque id iste repellat expedita, dolorum aliquid porro quam impedit aspernatur explicabo dolore vel
+            quisquam odio. Repudiandae.</p>
 
-    <p id="pr1" class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Veniam esse tempora placeat,
-        perspiciatis nesciunt
-        voluptatum totam ex ab enim officia quis quasi tempore ad dolorem. Accusantium repellendus atque ad consequatur.
-    </p>
-    <hr>
-    <p class="default-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem, rerum ab
-        delectus itaque saepe
-        ducimus possimus autem, impedit architecto at optio harum eligendi sunt dolores incidunt asperiores magnam
-        minima.</p>
+        <p id="shows" class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Veniam esse tempora placeat,
+            perspiciatis nesciunt
+            voluptatum totam ex ab enim officia quis quasi tempore ad dolorem. Accusantium repellendus atque ad
+            consequatur.
+        </p>
+        <hr>
+        <p class="default-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem, rerum
+            ab
+            delectus itaque saepe
+            ducimus possimus autem, impedit architecto at optio harum eligendi sunt dolores incidunt asperiores magnam
+            minima.</p>
+    </main>
     <footer class="footer">
         <!--         
         <strong> le da importancia</strong>
