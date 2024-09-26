@@ -4,6 +4,10 @@
     top: 0;
     z-index: 99;
     background-color: var(--bg-color);
+    /*  alineo el nav con la img */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .image {
         width: 20%;
