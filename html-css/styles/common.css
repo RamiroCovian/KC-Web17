@@ -22,3 +22,31 @@
 * {
     box-sizing: border-box;
 }
+
+/* Medias querys */
+@media print {
+
+    /* .header {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    } */
+    header.header,
+    .footer,
+    .banner {
+        display: none;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #fff;
+        --main-text-color: #000;
+    }
+} */
