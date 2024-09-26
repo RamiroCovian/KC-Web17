@@ -22,3 +22,13 @@
         }
     }
 }
+
+/* breackpoints -> 768px */
+@media screen and (width > 768px) {
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2.5rem;
+        align-items: center;
+    }
+}
