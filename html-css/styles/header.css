@@ -23,17 +23,6 @@
     }
 }
 
-.btn {
-    color: var(--main-text-color);
-    background-color: var(--main-brand-color);
-    /* quita la linea del link */
-    text-decoration: none;
-    padding: 0.7rem;
-    /* quita el problema de que se encimen los botones */
-    display: inline-block;
-    border-radius: 8px;
-}
-
 .hidden {
     /* visibility: hidden;
     opacity: 0; */
