@@ -18,6 +18,12 @@
 
     .image {
         background-image: url('../assets/app/catalog.jpg');
+        /* Elimina la posibilidad de que se repita la imagen */
+        background-repeat: no-repeat;
+        /* cubre todo el espacio sin deformar la imagen */
+        background-size: cover;
+        /* centra la imagen */
+        background-position: center;
         opacity: 0.3;
         position: absolute;
         left: 0;
