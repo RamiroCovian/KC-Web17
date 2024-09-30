@@ -5,67 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codefflix signin</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/signin.css">
 </head>
 
-<body>
-    <h1>Formulario</h1>
-    <form method="post">
-        <div>
-            <!-- <input type="" id="" name="">  importante poner minimo esos atributos-->
-            <label for="mail">Email</label>
-            <input type="email" id="mail" placeholder="Pon tu correo" name="correo" autocomplete="email" required>
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input required type="password" id="password" name="pwd">
-        </div>
-        <div>
-            <label for="tel">Enter your phone number</label>
-            <input required type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                title="Format (123-123-1234)">
-        </div>
-        <div>
-            <label for="file">Choose a profile picture</label>
-            <input type="file" id="file" name="profile" accept="'image/png" multiple>
-            <!--  multiple es para poder subir varios archivos -->
-        </div>
-        <fieldset>
-            <legend>Fav genre</legend>
-            <label for="shows">Shows</label>
-            <!-- los radios para ser marcados y desmarcados, tienen que compartir el mismo nombre -->
-            <input type="radio" id="shows" name="genre" value="shows">
-            <label for="docu">Docu</label>
-            <input type="radio" id="docu" name="genre" value="Docu" checked>
-            <!-- la propiedad checked determina que ya uno de los radio esta seleccionado -->
-        </fieldset>
-        <!-- <fieldset>
+<body class="main-bg container">
+    <main class="card">
+        <h1>Formulario</h1>
+        <form method="post">
+            <div class="form__input">
+                <!-- <input type="" id="" name="">  importante poner minimo esos atributos-->
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Pon tu correo" name="correo" autocomplete="email" required>
+            </div>
+            <div class="form__input">
+                <label for="password">Password</label>
+                <input required type="password" id="password" name="pwd">
+            </div>
+            <div class="form__input">
+                <label for="tel">Enter your phone number</label>
+                <input required type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    title="Format (123-123-1234)">
+            </div>
+            <div class="form__input">
+                <label for="file">Choose a profile picture</label>
+                <input type="file" id="file" name="profile" accept="'image/png" multiple>
+                <!--  multiple es para poder subir varios archivos -->
+            </div>
+            <fieldset class="form__input">
+                <legend>Fav genre</legend>
+                <label for="shows">Shows</label>
+                <!-- los radios para ser marcados y desmarcados, tienen que compartir el mismo nombre -->
+                <input type="radio" id="shows" name="genre" value="shows">
+                <label for="docu">Docu</label>
+                <input type="radio" id="docu" name="genre" value="Docu" checked>
+                <!-- la propiedad checked determina que ya uno de los radio esta seleccionado -->
+            </fieldset>
+            <!-- <fieldset>
         <legend>Fav programming lang</legend>
         <label for="js">JS</label>
         <input type="checkbox" id="js" name="favlang" value="js">
         <label for="python">Python</label>
         <input type="checkbox" id="python" name="favlang" value="python" >
         </fieldset> -->
-        <div>
-            <label for="bio">User bio</label>
-            <textarea required name="userbio" id="bio"></textarea>
-        </div>
-        <div>
-            <label for="remember">Remember me</label>
-            <input type="checkbox" name="remember" id="remember">
-        </div>
-        <div>
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="AR">Argentina</option>
-                <option value="CO" selected>Colombia</option>
-                <option value="ES">Spain</option>
-            </select>
-        </div>
-        <div>
-            <button type="reset">Reset</button>
-            <button>Guardar</button>
-        </div>
-    </form>
+            <div class="form__input">
+                <label for="bio">User bio</label>
+                <textarea required name="userbio" id="bio"></textarea>
+            </div>
+            <div class="form__input">
+                <label for="remember">Remember me</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+            <div class="form__input">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="AR">Argentina</option>
+                    <option value="CO" selected>Colombia</option>
+                    <option value="ES">Spain</option>
+                </select>
+            </div>
+            <div class="form__input">
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn">Guardar</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
