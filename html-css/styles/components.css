@@ -10,6 +10,12 @@
     /* quita el problema de que se encimen los botones */
     display: inline-block;
     border-radius: 8px;
+    border: 1px solid var(--main-brand-color);
+
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid var(--main-text-color);
+    }
 }
 
 /*  Form classes */
