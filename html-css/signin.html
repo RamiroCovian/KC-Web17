@@ -15,27 +15,27 @@
     <main class="card">
         <h1>Sign In</h1>
         <form method="post">
-            <div class="form__input">
+            <div class="form__element">
                 <!-- <input type="" id="" name="">  importante poner minimo esos atributos-->
                 <label for="mail">Email</label>
                 <input class="input" type="email" id="mail" placeholder="Pon tu correo" name="correo"
                     autocomplete="email" required>
             </div>
-            <div class="form__input">
+            <div class="form__element">
                 <label for="password">Password</label>
                 <input class="input" required type="password" id="password" name="pwd">
             </div>
-            <div class="form__input">
+            <div class="form__element">
                 <label for="tel">Enter your phone number</label>
                 <input class="input" required type="tel" id="tel" name="phone" autocomplete="off"
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format (123-123-1234)">
             </div>
-            <div class="form__input">
+            <div class="form__element">
                 <label for="file">Choose a profile picture</label>
                 <input type="file" id="file" name="profile" accept="'image/png" multiple>
                 <!--  multiple es para poder subir varios archivos -->
             </div>
-            <fieldset class="form__input">
+            <fieldset class="form__element">
                 <legend>Fav genre</legend>
                 <div>
                     <label for="shows">Shows</label>
@@ -53,17 +53,17 @@
         <label for="python">Python</label>
         <input type="checkbox" id="python" name="favlang" value="python" >
         </fieldset> -->
-            <div class="form__input">
+            <div class="form__element">
                 <label for="bio">User bio</label>
                 <textarea class="input" required name="userbio" id="bio"></textarea>
             </div>
-            <div class="form__input">
+            <div class="form__element">
                 <div>
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Remember me</label>
                 </div>
             </div>
-            <div class="form__input">
+            <div class="form__element">
                 <label for="country">Country</label>
                 <select class="input" name="country" id="country">
                     <option value="AR">Argentina</option>
@@ -71,8 +71,8 @@
                     <option value="ES">Spain</option>
                 </select>
             </div>
-            <div class="form__input">
-                <button class="btn" type="reset">Reset</button>
+            <div class="form__actions">
+                <button class="btn secondary" type="reset">Reset</button>
                 <button class="btn">Guardar</button>
             </div>
         </form>

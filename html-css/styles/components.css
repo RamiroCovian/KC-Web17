@@ -1,5 +1,6 @@
 /* en components se situan por ejemplo todos los botones que vamos a tener en la pag */
 
+/* Button */
 .btn {
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
@@ -9,4 +10,23 @@
     /* quita el problema de que se encimen los botones */
     display: inline-block;
     border-radius: 8px;
+}
+
+/*  Form classes */
+.form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    .input {
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        background: var(--input-bg-color);
+        color: var(--main-text-color);
+    }
 }
