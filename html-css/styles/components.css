@@ -18,6 +18,23 @@
     }
 }
 
+@media screen and (hover: hover) {
+    .pointer {
+        cursor: pointer;
+    }
+
+    .btn {
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--main-brand-color-light);
+        }
+    }
+
+    /* .btn:hover{
+    } */
+}
+
 /*  Form classes */
 .form__element {
     display: flex;
@@ -35,4 +52,20 @@
         background: var(--input-bg-color);
         color: var(--main-text-color);
     }
+
+    [type="file"] {
+        display: none;
+    }
+
+    /* input[type="file"] {
+    display: none;
+    } */
 }
+
+/* 
+id -> #id
+class -> .class
+tag -> p, button, h1
+all -> *
+attribute -> 
+*/
