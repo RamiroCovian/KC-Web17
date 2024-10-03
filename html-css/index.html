@@ -94,12 +94,46 @@
 
             }
         }
+
+        /* ul.list {
+        } */
+        /* Selectores */
+        ul {
+            &.list>li:nth-child(2) {
+                border-bottom: 1px solid white;
+            }
+        }
+
+        /* label+input {
+            border-color: blue;
+        } */
+
+        label~input {
+            border-color: blue;
+        }
     </style>
 </head>
 
 <body class="main-bg">
+    <label for="test">test</label>
+    <input type="text" id="test">
+    <input type="text" id="test">
+
     <div class="spinner"></div>
     <div class="progress"></div>
+    <ul class="list">
+        <li>
+            example 1
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </li>
+        <li> example 2 </li>
+        <li> example 3 </li>
+        <li> example 4 </li>
+    </ul>
     <!--
     Comentario 
     En multi linea
