@@ -21,17 +21,17 @@
 } */
 
 .footer {
-    /* NADA DE TEXTO: JUSTIFY */
-    text-align: center;
-    /* Le da peso o ancho a la tipografia */
-    font-weight: 100;
-    /* estilos de tipografia */
-    font-style: italic;
-    /* Transforma los textos */
-    text-transform: lowercase;
-    padding: 2em 0;
-    /* 1rem -> 16px es relativo al font-size del root*/
-    /* 1em ->  16px es relativo al ".main-bg" */
-    font-size: 1rem;
-    background-color: blue;
+  /* NADA DE TEXTO: JUSTIFY */
+  text-align: center;
+  /* Le da peso o ancho a la tipografia */
+  font-weight: 100;
+  /* estilos de tipografia */
+  font-style: italic;
+  /* Transforma los textos */
+  text-transform: lowercase;
+  padding: 2em 0;
+  /* 1rem -> 16px es relativo al font-size del root*/
+  /* 1em ->  16px es relativo al ".main-bg" */
+  font-size: 1rem;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
