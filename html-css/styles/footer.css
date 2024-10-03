@@ -34,4 +34,11 @@
   /* 1em ->  16px es relativo al ".main-bg" */
   font-size: 1rem;
   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+}
+
+@media screen and (width > 768px) {
+  .footer {
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+  }
 }
