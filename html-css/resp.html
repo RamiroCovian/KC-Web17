@@ -11,22 +11,34 @@
         }
 
         /* hacer esto en mi proyecto con el banner */
-        .catalog {
+        /* .catalog {
             width: 100%;
             background-color: aqua;
             aspect-ratio: 16 / 9;
             object-fit: cover;
             object-position: top;
+        } */
+        img {
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
     <!-- 1. position image -->
-    <img class="catalog" src="./assets/app/catalog.jpg" alt="">
+    <!-- <img class="catalog" src="./assets/app/catalog.jpg" alt=""> -->
     <!-- 2.<picture> -->
+    <picture>
+        <source srcset="./assets/responsive-images/dog_large.jpg" media="(min-width: 1200px)">
+        <source srcset="./assets/responsive-images/dog_medium.jpg" media="(min-width: 800px)">
+        <source srcset="./assets/responsive-images/dog_small.jpg" media="(max-width: 800px)">
 
+        <img src="./assets/responsive-images/dog_large.jpg" alt="">
+    </picture>
     <!-- 3 srcset -->
+    <img src="assets/responsive-images/dog_1089.jpg" srcset="assets/responsive-images/dog_591.jpg 591w,
+        assets/responsive-images/dog_1089.jpg 1089w,
+        assets/responsive-images/dog_1352.jpg 1352w">
 </body>
 
 </html>
