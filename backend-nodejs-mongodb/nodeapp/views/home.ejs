@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+<div class="container">
+    <p>User ID: <%= session.userId %></p>
+
+    <p>Ejemplo de inyeccion de codigo <%= nombre %>
+    </p>
+
+    <h2>Condicionales</h2>
+    <p>El segundo actual es: <%= segundoActual %>
+    </p>
+    <% if (esPar) {%>
+    <p>El segundo actual es par</p>
+    <% } else { %>
+    <p>El segundo actual es impar</p>
+    <% } %>
+
+    <% // Contenido para usuarios NO logados %>
+    <% if (!session.userId) { %>
+        <p>Para ver el contenido debe hacer <a href="/login">Login</a></p>
+    <% } %>
+
+    <% // Contenido para usuarios logados %>
+    <% if (session.userId) { %>
+        <h2>Bucles</h2>
+        <% agents.forEach(agent=> { %>
+        <p>
+        <%= agent.name %> tiene <%= agent.age %> años. <a href="/agents/delete/<%= agent.id %>"><i class="bi bi-trash"></i></a>
+        </p>
+        <% }) %>
+    <% } %>
+
+</div>
+<%- include('footer.ejs') %>
