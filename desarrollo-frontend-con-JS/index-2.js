@@ -45,6 +45,8 @@ const drawTweets = () => {
   // })
 
 
+  // const tweetsContainer = document.querySelector('.tweets-container') // si el div tiene class
+  const tweetsContainer = document.querySelector('#tweets-container') // si el div tiene ID
   // Recorrer array de tweets
   tweets.forEach(tweet => {
     // 2. Mostrar cada tweet en pantalla
@@ -57,7 +59,6 @@ const drawTweets = () => {
         <p> Me Gusta: ${tweet.likes} </p>
     `
     // 2.2 Incluir el div en el DOM
-    const tweetsContainer = document.querySelector('.tweets-container')
     tweetsContainer.appendChild(newTweet)
   })
 
